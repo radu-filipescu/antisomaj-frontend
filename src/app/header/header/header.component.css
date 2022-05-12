@@ -1,0 +1,39 @@
+.wrapper {
+  height: 8vh;
+  min-height: 50px;
+  background: #0E79B2;
+}
+
+#logo {
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+  height: 30px;
+}
+
+#pages {
+  position: absolute;
+  left: calc(3vw + 140px);
+  top: 2.3vh;
+  width: 50vw;
+}
+
+.page-title {
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+  color: #FBFEF9;
+}
+
+#account {
+  position: absolute;
+  right: 1vw;
+  top: 2.3vh;
+}
+
+.account-button {
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+  color: #FBFEF9;
+}

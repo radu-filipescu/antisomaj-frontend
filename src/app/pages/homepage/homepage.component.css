@@ -1,0 +1,47 @@
+.main-content {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+}
+
+#first-sentence {
+  font-size: 60px;
+  font-weight: 600; /* semi-bold */
+  letter-spacing: -1px;
+  color: #F39237;
+}
+
+#second-sentence {
+  font-size: 60px;
+  font-weight: 600; /* semi-bold */
+  letter-spacing: -1px;
+  color: #BF1363;
+}
+
+#third-sentence {
+  font-size: 60px;
+  font-weight: 600; /* semi-bold */
+  letter-spacing: -1px;
+  color: #F39237;
+}
+
+.hyperlink-about {
+  font-size: 60px;
+  font-weight: 600; /* semi-bold */
+  letter-spacing: -1px;
+  color: #F39237;
+  display: inline;
+  text-decoration: underline;
+}
+
+.hyperlink-about:hover {
+  color: #BF1363;
+}
+
+#about-us {
+  position: absolute;
+  top: 100vh;
+  height: 50px;
+  background: red;
+  width: 80vw;
+}

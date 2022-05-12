@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* forgot to use scss for stylesheets, so taking the global css variables from here will have to work */
+
+div {
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/*
+    app-white  - #FBFEF9
+    app-black  - #191923
+    app-blue   - #0E79B2
+    app-pink   - #BF1363
+    app-yellow - #F39237
+ */

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <img id="logo" src="./assets/images/logo.png">
+
+  <div id="pages">
+    <div *ngFor="let page of pages">
+      <div class="page-title">{{page.displayName}}</div>
+    </div>
+  </div>
+
+  <div id="account">
+    <div class="account-button">Login</div>
+    <div class="account-button">Sign up</div>
+  </div>
+</div>
