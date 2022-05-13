@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="wrapper">
+  <div id="login-header">Intră în cont:</div>
+  <div id="inputs">
+    <label style="display: block">Email</label>
+    <input [(ngModel)]="loginDto.email" class="login-input">
+    <br>
+    <label>Parolă</label>
+    <br>
+    <input type="password" [(ngModel)]="loginDto.password" class="login-input">
+    <br>
+    <label id="forgot">Am uitat parola</label>
+    <br>
+    <button>Login</button>
+  </div>
+</div>

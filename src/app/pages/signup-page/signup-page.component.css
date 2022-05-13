@@ -1,0 +1,46 @@
+.wrapper {
+  background: #FBFEF9;
+  height: 100vh;
+}
+
+#login-header {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: calc(50% - 10vw);
+  margin-top: 50px;
+}
+
+#freelancer-button {
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 250px);
+  background: #0E79B2;
+  text-align: center;
+  border-radius: 10px;
+  color: #FBFEF9;
+}
+
+input {
+  width: 20vw;
+  height: 30px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+#inputs {
+  position: absolute;
+  left: calc(50% - 10vw);
+  margin-top: 100px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  border: solid 1px #191923;
+}
+
+.signup-input {
+  margin-bottom: 30px;
+}
+

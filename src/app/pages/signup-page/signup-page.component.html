@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="wrapper">
+  <div id="login-header">Creaază-ți un cont:</div>
+
+  <div id="inputs">
+    <div class="signup-input">
+      <label>Prenume</label>
+      <br>
+      <input [(ngModel)]="newAccount.name">
+    </div>
+
+    <div class="signup-input">
+      <label>Nume</label>
+      <br>
+      <input [(ngModel)]="newAccount.surname">
+    </div>
+
+    <div class="signup-input">
+      <label>Data nașterii</label>
+      <br>
+      <div style="height: 30px">
+        <p-calendar [(ngModel)]="newAccount.dateOfBirth"></p-calendar>
+      </div>
+    </div>
+
+    <div class="signup-input">
+      <label>Email</label>
+      <br>
+      <input [(ngModel)]="newAccount.email">
+    </div>
+
+
+
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <img id="logo" src="./assets/images/logo.png">
+  <img routerLink="" id="logo" src="./assets/images/logo.png">
 
   <div id="pages">
     <div *ngFor="let page of pages">
@@ -8,7 +8,7 @@
   </div>
 
   <div id="account">
-    <div class="account-button">Login</div>
-    <div class="account-button">Sign up</div>
+    <div routerLink="/login" class="account-button">Login</div>
+    <div routerLink="/signup" class="account-button">Sign up</div>
   </div>
 </div>

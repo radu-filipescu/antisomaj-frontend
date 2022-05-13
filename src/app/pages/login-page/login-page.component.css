@@ -1,0 +1,41 @@
+.wrapper {
+  background: #FBFEF9;
+  height: 100vh;
+}
+
+#login-header {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: calc(50% - 10vw);
+  margin-top: 50px;
+}
+
+#inputs {
+  position: absolute;
+  left: calc(50% - 10vw);
+  margin-top: 100px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  border: solid 1px #191923;
+}
+
+.login-input {
+  margin-bottom: 30px;
+  height: 30px;
+  font-size: 18px;
+  width: 20vw;
+  padding: 5px;
+}
+
+#forgot {
+  position: relative;
+  left: 13vw;
+  top: -30px;
+  font-size: 17px;
+}
+
+#forgot:hover {
+  color: #BF1363;
+}

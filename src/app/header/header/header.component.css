@@ -9,31 +9,45 @@
   left: 2vw;
   top: 2vh;
   height: 30px;
+  cursor: pointer;
 }
 
 #pages {
   position: absolute;
   left: calc(3vw + 140px);
-  top: 2.3vh;
+  top: 0;
+  line-height: 8vh;
   width: 50vw;
 }
 
 .page-title {
   display: inline-block;
   float: left;
-  margin-right: 30px;
   color: #FBFEF9;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 8vh;
+}
+
+.page-title:hover {
+  background: #0261a5;
 }
 
 #account {
   position: absolute;
   right: 1vw;
-  top: 2.3vh;
+  top: 0;
+  line-height: 8vh;
 }
 
 .account-button {
   display: inline-block;
   float: left;
-  margin-right: 30px;
   color: #FBFEF9;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.account-button:hover {
+  background: #0261a5;
 }

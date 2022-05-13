@@ -16,3 +16,28 @@ div {
     app-pink   - #BF1363
     app-yellow - #F39237
  */
+
+button {
+  height: 35px;
+  width: 60px;
+  background: #0E79B2;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #FBFEF9;
+}
+
+button:hover {
+  box-shadow: #191923 4px 5px 12px -4px;
+}
+
+.p-calendar .p-inputtext {
+  padding: 5px;
+  height: 30px;
+  font-family: Calibri;
+  font-size: 18px;
+  border: solid 1px #191923;
+}
+
+.p-calendar .p-inputtext:hover {
+  border-color: #191923;
+}

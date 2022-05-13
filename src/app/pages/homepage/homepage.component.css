@@ -2,6 +2,8 @@
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 2vh;
+  background: #FBFEF9;
+  height: 200vh;
 }
 
 #first-sentence {
@@ -38,10 +40,25 @@
   color: #BF1363;
 }
 
+#ball-logo {
+  position: absolute;
+  top: 10vh;
+  right: 3vw;
+  height: 85vh;
+}
+
+/* ABOUT US SECTION */
+
 #about-us {
   position: absolute;
-  top: 100vh;
-  height: 50px;
-  background: red;
+  top: 110vh;
+  height: 100vh;
   width: 80vw;
+}
+
+#about-header {
+  padding-top: 2vh;
+  color: #191923;
+  font-size: 50px;
+  font-weight: bold;
 }
