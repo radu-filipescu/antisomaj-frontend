@@ -1,7 +1,11 @@
 .wrapper {
+  position: fixed;
   height: 8vh;
+  width: 100vw;
   min-height: 50px;
   background: #0E79B2;
+  z-index: 1000;
+  margin-bottom: 10vh;
 }
 
 #logo {

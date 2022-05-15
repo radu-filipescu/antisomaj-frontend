@@ -1,11 +1,12 @@
+import {EmployerDTO} from "./EmployerDTO";
+import {FreelancerDTO} from "./FreelancerDTO";
+
 export class AccountDTO {
   name: string = "";
   surname: string = "";
   dateOfBirth: Date = new Date();
   email: string = "";
   city: string = "";
-  description: string = "";
-  CV: string = "";
-  businessName: string = "";
-  businessLocation: string = "";
+  employerInfo: EmployerDTO = new EmployerDTO();
+  freelancerInfo: FreelancerDTO = new FreelancerDTO();
 }

@@ -31,13 +31,15 @@ button:hover {
 }
 
 .p-calendar .p-inputtext {
-  padding: 5px;
-  height: 30px;
   font-family: Calibri;
   font-size: 18px;
+  padding: 5px;
   border: solid 1px #191923;
 }
 
-.p-calendar .p-inputtext:hover {
-  border-color: #191923;
+.p-inputtext {
+  height: 30px;
+  padding: 5px !important;
+  font-family: Calibri !important;
+  font-size: 18px !important;
 }

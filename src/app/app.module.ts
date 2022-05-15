@@ -10,6 +10,9 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { FormsModule } from "@angular/forms";
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {AutoCompleteModule} from "primeng/autocomplete";
+import {HttpClientModule} from "@angular/common/http";
+import {InputSwitchModule} from "primeng/inputswitch";
 
 @NgModule({
   declarations: [
@@ -19,14 +22,17 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     LoginPageComponent,
     SignupPageComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    RouterModule,
-    AppRoutingModule,
-    FormsModule,
-    CalendarModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        RouterModule,
+        AppRoutingModule,
+        FormsModule,
+        CalendarModule,
+        AutoCompleteModule,
+        HttpClientModule,
+        InputSwitchModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

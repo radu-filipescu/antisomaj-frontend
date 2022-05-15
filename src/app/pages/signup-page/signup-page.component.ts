@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AccountDTO} from "./Entities/AccountDTO";
+import {HttpClient} from "@angular/common/http";
+import {FreelancerDTO} from "./Entities/FreelancerDTO";
+import {EmployerDTO} from "./Entities/EmployerDTO";
 
 @Component({
   selector: 'app-signup-page',
@@ -7,11 +10,44 @@ import {AccountDTO} from "./Entities/AccountDTO";
   styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent implements OnInit {
+  citiesInRo: string[] = [];
+  filteredCities: string[] = [];
   newAccount: AccountDTO = new AccountDTO();
+  freelancerAccount: boolean = false;
+  employerAccount: boolean = false;
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.loadCities();
   }
 
+  loadCities() {
+    this.httpClient.get('./assets/text/citiesInRomania.txt', { responseType: 'text' })
+      .subscribe(
+        data => {
+              let splitString: string[] = data.split("\n");
+              for(var i = 0; i < splitString.length; i++) {
+                splitString[i] = splitString[i].slice(0, -1);
+                this.citiesInRo.push(splitString[i]);
+              }
+        }
+      );
+  }
+
+  searchCity(event: any) {
+    let searchWord: string = event.query.toLowerCase();
+    this.filteredCities = [];
+    for(var i = 0; i < this.citiesInRo.length; i++) {
+      let wordWithoutDiacritics: string = this.citiesInRo[i].toLowerCase();
+      wordWithoutDiacritics = wordWithoutDiacritics.replace('ă','a');
+      wordWithoutDiacritics = wordWithoutDiacritics.replace('ț','t');
+      wordWithoutDiacritics = wordWithoutDiacritics.replace('ș','s');
+      wordWithoutDiacritics = wordWithoutDiacritics.replace('â','a');
+      wordWithoutDiacritics = wordWithoutDiacritics.replace('î','i');
+
+      if(wordWithoutDiacritics.indexOf(searchWord) !== -1 || this.citiesInRo[i].toLowerCase().indexOf(searchWord) !== -1)
+        this.filteredCities.push(this.citiesInRo[i]);
+    }
+  }
 }

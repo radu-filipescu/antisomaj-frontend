@@ -1,7 +1,7 @@
 .main-content {
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vh;
+  padding-top: 10vh;
   background: #FBFEF9;
   height: 200vh;
 }
@@ -51,13 +51,13 @@
 
 #about-us {
   position: absolute;
-  top: 110vh;
+  top: 120vh;
   height: 100vh;
   width: 80vw;
 }
 
 #about-header {
-  padding-top: 2vh;
+  padding-top: 10vh;
   color: #191923;
   font-size: 50px;
   font-weight: bold;

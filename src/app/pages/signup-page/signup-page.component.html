@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="wrapper">
-  <div id="login-header">Creaază-ți un cont:</div>
+  <div id="login-header">Creează-ți un cont:</div>
 
   <div id="inputs">
     <div class="signup-input">
@@ -30,7 +30,29 @@
       <input [(ngModel)]="newAccount.email">
     </div>
 
+    <div class="signup-input">
+      <label>Oraș</label>
+      <br>
+      <p-autoComplete [suggestions]="filteredCities" [(ngModel)]="newAccount.city" (completeMethod)="searchCity($event)"></p-autoComplete>
+    </div>
 
+    <div class="signup-input">
+      <label>Doriți să lucrați ca freelancer pe acest site?</label>
+      <br>
+      <p-inputSwitch [(ngModel)]="freelancerAccount"></p-inputSwitch>
+    </div>
+
+    <div class="signup-input">
+      <label>Adăugați o descriere:</label>
+      <br>
+      <textarea pInputTextarea [(ngModel)]="newAccount.freelancerInfo.description"></textarea>
+    </div>
+
+    <div class="signup-input">
+      <label>Doriți să găsiți un freelancer pentru un proiect sau să postați un anunț de job?</label>
+      <br>
+      <p-inputSwitch [(ngModel)]="employerAccount"></p-inputSwitch>
+    </div>
 
   </div>
 
