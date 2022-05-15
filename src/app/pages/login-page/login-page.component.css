@@ -3,7 +3,7 @@
   height: 92vh;
 }
 
-#login-header {
+.login-header {
   font-size: 30px;
   font-weight: bold;
   position: absolute;
@@ -11,7 +11,7 @@
   margin-top: 80px;
 }
 
-#inputs {
+.inputs {
   position: absolute;
   left: calc(50% - 10vw);
   margin-top: 130px;
@@ -38,4 +38,16 @@
 
 #forgot:hover {
   color: #BF1363;
+}
+
+#login-button {
+  border-radius: 8px;
+}
+
+#navigate-back {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  font-size: 30px;
+  color: #191923;
 }

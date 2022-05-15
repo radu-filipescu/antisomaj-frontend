@@ -1,17 +1,32 @@
 <app-header></app-header>
 
 <div class="wrapper">
-  <div id="login-header">Intră în cont:</div>
-  <div id="inputs">
-    <label style="display: block">Email</label>
-    <input [(ngModel)]="loginDto.email" class="login-input">
-    <br>
-    <label>Parolă</label>
-    <br>
-    <input type="password" [(ngModel)]="loginDto.password" class="login-input">
-    <br>
-    <label id="forgot">Am uitat parola</label>
-    <br>
-    <button>Login</button>
+  <div *ngIf="!forgotPasswordMode">
+    <div class="login-header">Intră în cont:</div>
+    <div class="inputs">
+      <label style="display: block">Email</label>
+      <input [(ngModel)]="loginDto.email" class="login-input">
+      <br>
+      <label>Parolă</label>
+      <br>
+      <input type="password" [(ngModel)]="loginDto.password" class="login-input">
+      <br>
+      <label (click)="forgotPasswordMode = !forgotPasswordMode" id="forgot">Am uitat parola</label>
+      <br>
+      <button id="login-button" (click)="login()">Login</button>
+    </div>
+  </div>
+
+  <div *ngIf="forgotPasswordMode">
+    <div class="login-header">Recuperează-ți parola:</div>
+    <div class="inputs">
+      <div (click)="forgotPasswordMode = false" id="navigate-back">
+        <i class="fa fa-arrow-circle-o-left"></i>
+      </div>
+      <label style="display: block">Emailul de recuperare:</label>
+      <input [(ngModel)]="loginDto.email" class="login-input">
+      <br>
+      <button style="border-radius: 8px" (click)="login()">Trimite</button>
+    </div>
   </div>
 </div>
