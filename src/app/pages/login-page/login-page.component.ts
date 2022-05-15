@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginDTO} from "./Entities/LoginDTO";
+import {AuthService} from "./Services/auth.service";
 
 @Component({
   selector: 'app-login-page',
@@ -8,10 +9,15 @@ import {LoginDTO} from "./Entities/LoginDTO";
 })
 export class LoginPageComponent implements OnInit {
   loginDto: LoginDTO = new LoginDTO();
+  forgotPasswordMode: boolean = false;
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
+  }
+
+  login() {
+    this.authService.login(this.loginDto);
   }
 
 }

@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <div id="account">
+  <div *ngIf="!isLoggedIn" id="account">
     <div routerLink="/login" class="account-button">Login</div>
     <div routerLink="/signup" class="account-button">Sign up</div>
   </div>

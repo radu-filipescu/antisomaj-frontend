@@ -11,9 +11,15 @@ import { FormsModule } from "@angular/forms";
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AutoCompleteModule} from "primeng/autocomplete";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {InputSwitchModule} from "primeng/inputswitch";
 import { NotificationsComponent } from './globalStuff/notifications/notifications/notifications.component';
+import {JwtInterceptor} from "./globalStuff/interceptors/jwt.interceptor";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import {faArrowCircleLeft, faFilm, faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 @NgModule({
   declarations: [
@@ -33,9 +39,16 @@ import { NotificationsComponent } from './globalStuff/notifications/notification
         CalendarModule,
         AutoCompleteModule,
         HttpClientModule,
-        InputSwitchModule
+        InputSwitchModule,
+        FontAwesomeModule
     ],
-  providers: [],
+  providers: [
+    {
+    provide: HTTP_INTERCEPTORS,
+    useClass: JwtInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
