@@ -3,7 +3,7 @@
 
   <div id="pages">
     <div *ngFor="let page of pages">
-      <div class="page-title">{{page.displayName}}</div>
+      <div routerLink="{{page.navigatePath}}" class="page-title">{{page.displayName}}</div>
     </div>
   </div>
 

@@ -13,6 +13,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AutoCompleteModule} from "primeng/autocomplete";
 import {HttpClientModule} from "@angular/common/http";
 import {InputSwitchModule} from "primeng/inputswitch";
+import { JobsPageComponent } from './pages/jobs-page/jobs-page.component';
+import { JobCardComponent } from './job-card/job-card.component';
+import {SliderModule} from 'primeng/slider';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import {InputSwitchModule} from "primeng/inputswitch";
     HeaderComponent,
     HomepageComponent,
     LoginPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    JobsPageComponent,
+    JobCardComponent
   ],
     imports: [
         BrowserModule,
@@ -31,7 +36,8 @@ import {InputSwitchModule} from "primeng/inputswitch";
         CalendarModule,
         AutoCompleteModule,
         HttpClientModule,
-        InputSwitchModule
+        InputSwitchModule,
+        SliderModule
     ],
   providers: [],
   bootstrap: [AppComponent]

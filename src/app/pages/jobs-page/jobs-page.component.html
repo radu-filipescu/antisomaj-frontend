@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="page-content">
+    <div class="filters">
+        <p>filtre</p>
+        <div class="filter-section">
+            <p-slider [(ngModel)]="filters.rangeValues" [range]="true"></p-slider>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" />
+        <button>Cauta</button>
+    </div>
+    
+    <div class="jobs">
+        <app-job-card *ngFor="let job of jobs" [job] = "job"></app-job-card>
+    </div>
+</div>
+

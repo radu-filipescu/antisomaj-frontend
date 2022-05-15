@@ -1,0 +1,30 @@
+.page-content{
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 10vh;
+    display: grid;
+    grid-template-areas: 
+        'filters search-bar'
+        'filters jobs';
+    gap: 30px;
+}
+
+.filters {
+    grid-area: filters;
+    width: 300px;
+}
+
+.jobs {
+    grid-area: jobs;
+}
+
+.search-bar {
+    
+    grid-area: search-bar;
+}
+
+.search-bar > input {
+    width: calc(100% - 60px);
+    height: 35px;
+}
