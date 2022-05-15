@@ -1,0 +1,46 @@
+.wrapper {
+  position: fixed;
+  width: 30vw;
+  height: 25vh;
+  top: 5vh;
+  left: 35vw;
+  z-index: 500000;
+  border-radius: 12px;
+  padding: 10px;
+  opacity: 0.95;
+}
+
+/*the default one*/
+.wrapper {
+  background: #f5cea9;
+}
+
+.wrapper[errorWrapper] {
+  background: #ff8c8c;
+}
+
+.wrapper[successWrapper] {
+  background: #b0ff8c;
+}
+
+#notif-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 8px 8px 2px 2px;
+  margin-bottom: 5px;
+  line-height: 30px;
+  height: 30px;
+}
+
+#notif-title {
+  background: #F39237;
+}
+
+#notif-title[errorWrapper] {
+  background: #ba1616;
+}
+
+#notif-title[successWrapper] {
+  background: #44ba16;
+}

@@ -37,22 +37,52 @@
     </div>
 
     <div class="signup-input">
-      <label>Doriți să lucrați ca freelancer pe acest site?</label>
+      <label>Doriți să lucrați ca freelancer pe acest site?<br><b>(configurare cont de freelancer)</b></label>
       <br>
       <p-inputSwitch [(ngModel)]="freelancerAccount"></p-inputSwitch>
     </div>
 
-    <div class="signup-input">
-      <label>Adăugați o descriere:</label>
-      <br>
-      <textarea pInputTextarea [(ngModel)]="newAccount.freelancerInfo.description"></textarea>
+    <div *ngIf="freelancerAccount">
+      <div class="signup-input">
+        <label>Adăugați o descriere:</label>
+        <br>
+        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.freelancerInfo.description"></textarea>
+      </div>
+
+      <div class="signup-input">
+        <label>Adăugați CV:</label>
+        <br>
+        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.freelancerInfo.CV"></textarea>
+      </div>
     </div>
 
     <div class="signup-input">
-      <label>Doriți să găsiți un freelancer pentru un proiect sau să postați un anunț de job?</label>
+      <label>Doriți să găsiți un freelancer pentru un proiect sau să postați un anunț de job?<br><b>(configurare cont de angajator)</b></label>
       <br>
       <p-inputSwitch [(ngModel)]="employerAccount"></p-inputSwitch>
     </div>
+
+    <div *ngIf="employerAccount">
+      <div class="signup-input">
+        <label>Numele firmei dumneavoastră:</label>
+        <br>
+        <input [(ngModel)]="newAccount.employerInfo.businessName">
+      </div>
+
+      <div class="signup-input">
+        <label>Locația firmei dumneavoastră:</label>
+        <br>
+        <input [(ngModel)]="newAccount.employerInfo.businessLocation">
+      </div>
+
+      <div class="signup-input">
+        <label>Descrierea firmei dumneavoastră:</label>
+        <br>
+        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.employerInfo.businessDescription"></textarea>
+      </div>
+    </div>
+
+    <button [disabled]="checkIfValid()" (click)="createAccount()" id="createButton">Creează cont</button>
 
   </div>
 

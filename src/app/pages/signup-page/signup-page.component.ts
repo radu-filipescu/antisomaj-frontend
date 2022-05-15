@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AccountDTO} from "./Entities/AccountDTO";
 import {HttpClient} from "@angular/common/http";
-import {FreelancerDTO} from "./Entities/FreelancerDTO";
-import {EmployerDTO} from "./Entities/EmployerDTO";
+import {NotificationService} from "../../globalStuff/notifications/notification.service";
 
 @Component({
   selector: 'app-signup-page',
@@ -16,7 +15,8 @@ export class SignupPageComponent implements OnInit {
   freelancerAccount: boolean = false;
   employerAccount: boolean = false;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,
+              private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.loadCities();
@@ -49,5 +49,13 @@ export class SignupPageComponent implements OnInit {
       if(wordWithoutDiacritics.indexOf(searchWord) !== -1 || this.citiesInRo[i].toLowerCase().indexOf(searchWord) !== -1)
         this.filteredCities.push(this.citiesInRo[i]);
     }
+  }
+
+  checkIfValid() {
+
+  }
+
+  createAccount() {
+    this.notificationService.emitNotification("test", "cont creat cu success", true, false);
   }
 }

@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AutoCompleteModule} from "primeng/autocomplete";
 import {HttpClientModule} from "@angular/common/http";
 import {InputSwitchModule} from "primeng/inputswitch";
+import { NotificationsComponent } from './globalStuff/notifications/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {InputSwitchModule} from "primeng/inputswitch";
     HeaderComponent,
     HomepageComponent,
     LoginPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    NotificationsComponent
   ],
     imports: [
         BrowserModule,
