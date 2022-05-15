@@ -7,7 +7,7 @@
   font-size: 30px;
   font-weight: bold;
   position: absolute;
-  left: calc(50% - 10vw);
+  left: calc(50% - 20vw);
   margin-top: 80px;
 }
 
@@ -16,19 +16,25 @@ input {
   height: 30px;
   font-size: 18px;
   padding: 5px;
+  font-family: Calibri;
 }
 
 #inputs {
   position: absolute;
-  left: calc(50% - 10vw);
+  left: calc(50% - 20vw);
   margin-top: 130px;
   padding: 20px;
   background: white;
   border-radius: 15px;
   border: solid 1px #191923;
+  max-width: 40vw;
 }
 
 .signup-input {
   margin-bottom: 30px;
 }
 
+#createButton {
+  width: 8vw;
+  border-radius: 8px;
+}

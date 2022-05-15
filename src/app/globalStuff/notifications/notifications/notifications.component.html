@@ -1,0 +1,11 @@
+<div class="wrapper"
+     [attr.errorWrapper]="notification.isError == true ? '' : null"
+     [attr.successWrapper]="notification.isSuccess == true ? '' : null"
+     *ngIf="notification">
+  <div id="notif-title"
+       [attr.errorWrapper]="notification.isError == true ? '' : null"
+       [attr.successWrapper]="notification.isSuccess == true ? '' : null">
+    {{notification.title}}
+  </div>
+  <div id="notif-content">{{notification.message}}</div>
+</div>

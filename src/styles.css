@@ -43,3 +43,11 @@ button:hover {
   font-family: Calibri !important;
   font-size: 18px !important;
 }
+
+textarea {
+  padding: 5px;
+  font-family: Calibri;
+  font-size: 18px;
+  max-width: 35vw;
+  min-height: 35px;
+}
