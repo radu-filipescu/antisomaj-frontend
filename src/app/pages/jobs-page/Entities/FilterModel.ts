@@ -1,3 +1,5 @@
 export class FilterModel {
-    rangeValues: number[] = [0, 100];
+    payRangeValues: number[] = [0, 1000];
+    category: string = "";
+    minimumExperience: number = 0;
 }

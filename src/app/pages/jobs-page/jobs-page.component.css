@@ -7,12 +7,12 @@
     grid-template-areas: 
         'filters search-bar'
         'filters jobs';
-    gap: 30px;
+    gap: 30px 50px;
+    grid-template-columns: 25% 75%;
 }
 
 .filters {
     grid-area: filters;
-    width: 300px;
 }
 
 .jobs {
@@ -27,4 +27,30 @@
 .search-bar > input {
     width: calc(100% - 60px);
     height: 35px;
+    font-size: 18px;
+}
+
+.filter-section {
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.filter-section > label {
+    background-color: #BF1363;
+    color: #FBFEF9;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.filter-section > select, .slider-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+select, .range-value{
+    font-size: 18px;
 }

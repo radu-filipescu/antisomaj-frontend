@@ -7,6 +7,17 @@
 }
 
 .job-info{
-    flex-grow: 4;
+    flex-grow: 3;
+}
+
+.job-info > p {
+    margin-bottom: 0.5em;
+}
+
+.category-tag{
+    background-color: #F39237;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
 }
 
