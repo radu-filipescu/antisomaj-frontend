@@ -23,6 +23,9 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import {faArrowCircleLeft, faFilm, faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { BugReportComponent } from './globalStuff/bug-reporting/bug-report/bug-report.component';
+import {TooltipModule} from "primeng/tooltip";
+import {InputTextareaModule} from "primeng/inputtextarea";
 
 @NgModule({
   declarations: [
@@ -31,9 +34,25 @@ import { library } from '@fortawesome/fontawesome-svg-core';
     HomepageComponent,
     LoginPageComponent,
     SignupPageComponent,
+    NotificationsComponent,
+    BugReportComponent
     JobsPageComponent,
     JobCardComponent,
     NotificationsComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    CalendarModule,
+    AutoCompleteModule,
+    HttpClientModule,
+    InputSwitchModule,
+    FontAwesomeModule,
+    TooltipModule,
+    InputTextareaModule
   ],
     imports: [
         BrowserModule,

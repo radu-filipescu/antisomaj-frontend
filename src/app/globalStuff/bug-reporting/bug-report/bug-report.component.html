@@ -1,0 +1,10 @@
+<div (click)="opened = !opened" id="circle" pTooltip="Raportează o problemă">
+  <i class="fa fa-bug" aria-hidden="true"></i>
+</div>
+
+<div *ngIf="opened" id="box">
+  <div id="bug-header">Scrie-ne aici ce problemă ai întâmpinat:</div>
+  <textarea id="bug-content" pInputTextarea [rows]="5" [cols]="30" [(ngModel)]="bugContent"></textarea>
+
+  <button (click)="sendBugReport()" id="bug-button">Trimite</button>
+</div>

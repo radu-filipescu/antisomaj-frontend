@@ -3,7 +3,8 @@
   height: 8vh;
   width: 100vw;
   min-height: 50px;
-  background: #0E79B2;
+  background: rgb(0,109,187);
+  background: linear-gradient(34deg, rgba(0,109,187,1) 0%, rgba(14,121,178,1) 67%);
   z-index: 1000;
   margin-bottom: 10vh;
 }

@@ -7,7 +7,9 @@
   z-index: 500000;
   border-radius: 12px;
   padding: 10px;
-  opacity: 0.95;
+  opacity: 0.90;
+  border: 2px solid #191923;
+  box-shadow: #191923 2px 2px 2px;
 }
 
 /*the default one*/
