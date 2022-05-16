@@ -45,7 +45,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
         AutoCompleteModule,
         HttpClientModule,
         InputSwitchModule,
-        SliderModule
+        SliderModule,
         InputSwitchModule,
         FontAwesomeModule
     ],
