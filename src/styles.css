@@ -37,7 +37,7 @@ button:hover {
   border: solid 1px #191923;
 }
 
-.p-inputtext {
+.p-inputtext:not(textarea) {
   height: 30px;
   padding: 5px !important;
   font-family: Calibri !important;

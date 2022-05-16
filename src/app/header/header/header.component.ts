@@ -9,8 +9,8 @@ import {AuthService} from "../../pages/login-page/Services/auth.service";
 export class HeaderComponent implements OnInit {
   isLoggedIn: boolean = false;
 
-  pages: any = [{ displayName: "Caut de muncă", navigatePath: "job-search"},
-                { displayName: "Caut freelancer", navigatePath: "freelancer-search"}
+  pages: any = [{ displayName: "Caut de muncă", navigatePath: "/job-search"},
+                { displayName: "Caut freelancer", navigatePath: "/freelancer-search"}
                ];
 
 

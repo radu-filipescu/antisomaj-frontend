@@ -35,7 +35,7 @@ import {InputTextareaModule} from "primeng/inputtextarea";
     LoginPageComponent,
     SignupPageComponent,
     NotificationsComponent,
-    BugReportComponent
+    BugReportComponent,
     JobsPageComponent,
     JobCardComponent,
     NotificationsComponent
@@ -50,24 +50,11 @@ import {InputTextareaModule} from "primeng/inputtextarea";
     AutoCompleteModule,
     HttpClientModule,
     InputSwitchModule,
+    SliderModule,
     FontAwesomeModule,
     TooltipModule,
     InputTextareaModule
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        RouterModule,
-        AppRoutingModule,
-        FormsModule,
-        CalendarModule,
-        AutoCompleteModule,
-        HttpClientModule,
-        InputSwitchModule,
-        SliderModule,
-        InputSwitchModule,
-        FontAwesomeModule
-    ],
   providers: [
     {
     provide: HTTP_INTERCEPTORS,

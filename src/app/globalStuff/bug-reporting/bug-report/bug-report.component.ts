@@ -7,7 +7,7 @@ import { NotificationService } from "../../notifications/notification.service";
   styleUrls: ['./bug-report.component.css']
 })
 export class BugReportComponent implements OnInit {
-  opened: boolean = true;
+  opened: boolean = false;
   bugContent: string = "";
 
   constructor(private notificationService: NotificationService) { }
