@@ -1,5 +1,6 @@
+<div #scrollTopHelper style="background: rgb(0,109,187); opacity: 1; height: 0px; top: 1px; left: 0px" ></div>
 <div class="wrapper">
-  <img routerLink="" id="logo" src="./assets/images/logo.png">
+  <img routerLink="" (click)="goToTop(scrollTopHelper)" id="logo" src="./assets/images/logo.png">
 
   <div id="pages">
     <div *ngFor="let page of pages">

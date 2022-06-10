@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from "../../pages/login-page/Services/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -14,10 +15,16 @@ export class HeaderComponent implements OnInit {
                ];
 
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.isLoggedIn = this.authService.isLogged();
   }
 
+  goToTop(element: HTMLElement) {
+    //while(this.router.url != '/') {
+    //}
+    element.scrollIntoView({behavior: 'smooth'})
+  }
 }
