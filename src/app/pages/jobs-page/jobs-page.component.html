@@ -4,16 +4,16 @@
     <div class="filters">
         <div class="filter-section">
             <label for="category">Categorie</label>
-            <select name="category" id="category" [(ngModel)]="filters.category">
-                <option *ngFor="let category of categories" value="{{category}}">{{ category }}</option>
-            </select>
+            <p-autoComplete [(ngModel)]="filters.category" [suggestions]="categorySuggestions" (completeMethod)="searchCategories($event)"
+                    [dropdown]="true" [forceSelection]="true">
+            </p-autoComplete>
         </div>
         <div class="filter-section">
             <label for="payRange">Salariu</label>
             <div class="slider-container">
-                <p-slider [(ngModel)]="filters.payRangeValues" [range]="true" [min]="0" [max]="1000" id="payRange"></p-slider>
+                <p-slider [(ngModel)]="filters.payRangeValues" [range]="true" [min]="0" [max]="100" id="payRange"></p-slider>
             </div>
-            <p class="range-value">{{filters.payRangeValues[0]}} - {{ filters.payRangeValues[1] }}</p>
+            <p class="range-value">{{filters.payRangeValues[0] * 100}} - {{ filters.payRangeValues[1] * 100 }}</p>
         </div>
         <div class="filter-section">
             <label for="experience">Ani de experienta</label>

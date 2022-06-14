@@ -12,8 +12,9 @@ export class JobsPageComponent implements OnInit {
 
   jobMock: JobDTO = new JobDTO;
   jobs: JobDTO[] = [];
-  filters: FilterModel = new FilterModel();
+  filters: FilterModel = new FilterModel(); // cand folosesc din range inmultesc cu 100 inainte
   categories: string[] = [];
+  categorySuggestions: string[] = []
   categoriesMock: string[] = ["Programare", "Design", "Muncit cu ziua"];
 
   constructor() { }
@@ -31,6 +32,21 @@ export class JobsPageComponent implements OnInit {
 
     this.jobs = [this.jobMock, this.jobMock, this.jobMock];
     this.categories = this.categoriesMock;
+  }
+
+  searchCategories(input: any) {
+    this.categorySuggestions = [];
+
+    if(input.query.length == 0 || input.query[0] == '*') {
+      this.categorySuggestions = this.categories;
+    }
+    else {
+      for (let i = 0; i < this.categories.length; i++)
+        if (this.categories[i].toLowerCase().includes(input.query.toLowerCase()))
+          this.categorySuggestions.push(this.categories[i]);
+    }
+
+    this.categorySuggestions.push("toate");
   }
 
 }

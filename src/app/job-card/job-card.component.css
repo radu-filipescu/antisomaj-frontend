@@ -4,6 +4,7 @@
     padding: 2vh;
     display: flex;
     margin-bottom: 20px;
+    box-shadow: #191923 4px 5px 12px -4px;
 }
 
 .job-info{

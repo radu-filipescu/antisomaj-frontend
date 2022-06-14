@@ -56,3 +56,7 @@
 .account-button:hover {
   background: #0261a5;
 }
+
+.active-page {
+  background-color: #035a99;
+}
