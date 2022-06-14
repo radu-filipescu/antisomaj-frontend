@@ -1,0 +1,64 @@
+.wrapper {
+  height: 220px;
+  width: 49vw;
+  background: white;
+  display: grid;
+  padding: 10px;
+  grid-template-areas: "photo name options"
+                       "info info info";
+  grid-template-rows: 100px auto;
+  grid-template-columns: 100px 30vw auto;
+  border: 1px solid #191923;
+  box-shadow: #191923 4px 5px 12px -4px;
+  border-radius: 5px;
+}
+
+#photo {
+  grid-area: photo;
+  height: 90px;
+  width: 90px;
+  border-radius: 500px;
+  background: #0E79B2;
+  border: 2px solid #0261a5;
+  color: #FBFEF9;
+  line-height: 80px;
+  text-align: center;
+}
+
+#name {
+  grid-area: name;
+  font-size: 24px;
+  color: #0261a5;
+}
+
+#name:hover {
+  text-decoration: underline;
+  height: 30px;
+}
+
+#position {
+  font-size: 16px;
+  color: #F39237;
+}
+
+#position:hover {
+  text-decoration: none;
+}
+
+#userInfo {
+  grid-area: options;
+  line-height: 30px;
+}
+
+#description {
+  grid-area: info;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  max-width: 49vw;
+  width: 700px;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  color: #191923;
+}

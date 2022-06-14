@@ -26,6 +26,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { BugReportComponent } from './globalStuff/bug-reporting/bug-report/bug-report.component';
 import {TooltipModule} from "primeng/tooltip";
 import {InputTextareaModule} from "primeng/inputtextarea";
+import { FreelancersPageComponent } from './pages/freelancers-page/freelancers-page.component';
+import { ProfileListViewComponent } from './pages/freelancers-page/profile-list-view/profile-list-view.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import {InputTextareaModule} from "primeng/inputtextarea";
     BugReportComponent,
     JobsPageComponent,
     JobCardComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    FreelancersPageComponent,
+    ProfileListViewComponent
   ],
   imports: [
     BrowserModule,

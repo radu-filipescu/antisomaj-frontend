@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  top: 8vh;
+  height: 92vh;
+  background: #FBFEF9;
+}
+
+#filtering-area {
+  width: 22vw;
+  max-width: 22vw;
+  height: 92vh;
+  margin-left: 15vw;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  background: red;
+}
+
+#profiles-area {
+  width: 50vw;
+  max-width: 50vw;
+  height: 92vh;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  margin-left: 2vw;
+  background: blue;
+}
