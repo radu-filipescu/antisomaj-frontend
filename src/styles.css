@@ -51,3 +51,8 @@ textarea {
   max-width: 35vw;
   min-height: 35px;
 }
+
+.p-autocomplete-dd .p-autocomplete-input, .p-autocomplete-dd .p-autocomplete-multiple-container {
+  height: 35px;
+}
+

@@ -2,18 +2,46 @@
 
 <div class="wrapper">
   <div id="filtering-area">
-    <div>filter 1</div>
-    <div>filter 2</div>
-    <div>filter 3</div>
-    <div>filter 4</div>
+
+    <label>Materie:</label>
+    <p-autoComplete [(ngModel)]="subject" [suggestions]="subjectSuggestions" (completeMethod)="searchSubjects($event)"
+                    [dropdown]="true" [forceSelection]="true"></p-autoComplete>
+    <br>
+    <br>
+
+    <label>Universitate:</label>
+    <p-autoComplete [(ngModel)]="university" [suggestions]="uniSuggestions" (completeMethod)="searchUnis($event)"
+                    [dropdown]="true" [forceSelection]="true"></p-autoComplete>
+    <br>
+    <br>
+
+    <label>Oraș:</label>
+    <br>
+    <p-autoComplete id="cityPicker" [(ngModel)]="city" [suggestions]="citySuggestions" (completeMethod)="searchCity($event)"></p-autoComplete>
+    <br>
+    <br>
+
+    <button id="filter-button">Filtrează</button>
+
   </div>
 
   <div id="profiles-area">
-    <div id="search-bar">
-<!--      <p-autoComplete [(ngModel)]="searchString" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>-->
+    <input
+      id="search-bar"
+      type="text"
+      placeholder="caută dupa nume.."
+      [(ngModel)]="profileName">
+    <div id="search-button" (click)="filterByName()">
+      <img style="height: 30px; position: relative; top: 5px;" src="assets/images/search-icon.png">
     </div>
+    <br>
+    <br>
+    <br>
 
-    <app-profile-list-view></app-profile-list-view>
+    <div *ngFor="let profile of visibleList">
+      <app-profile-list-view [userProfile]="profile"></app-profile-list-view>
+      <br>
+    </div>
 
   </div>
 </div>

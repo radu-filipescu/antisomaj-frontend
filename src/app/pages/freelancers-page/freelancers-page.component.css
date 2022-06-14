@@ -1,28 +1,61 @@
 .wrapper {
   position: relative;
   top: 8vh;
+  padding-top: 20px;
   height: 92vh;
   background: #FBFEF9;
+  display: grid;
+  grid-template-areas: "filtering profiles";
+  grid-template-columns: 34vw auto;
 }
 
 #filtering-area {
-  width: 22vw;
-  max-width: 22vw;
-  height: 92vh;
+  position: relative;
+  top: -10px;
+  grid-area: filtering;
   margin-left: 15vw;
-  display: inline-block;
-  float: left;
   padding: 5px;
-  background: red;
+  overflow: hidden;
 }
 
 #profiles-area {
-  width: 50vw;
-  max-width: 50vw;
-  height: 92vh;
-  display: inline-block;
-  float: left;
+  grid-area: profiles;
   padding: 5px;
   margin-left: 2vw;
-  background: blue;
+  overflow-y: scroll;
+}
+
+#filter-button {
+  width: 90px;
+  border-radius: 8px;
+}
+
+#search-bar {
+  width: 45vw;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 10px;
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+#search-button {
+  display: inline;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 1vw;
+  background: #0261a5;
+  width: 3vw;
+  border-radius: 10px;
+  text-align: center;
+  color: #FBFEF9;
+}
+
+#search-button:hover {
+  color: #F39237;
+  cursor: pointer;
+  box-shadow: #191923 4px 5px 12px -4px;
 }
