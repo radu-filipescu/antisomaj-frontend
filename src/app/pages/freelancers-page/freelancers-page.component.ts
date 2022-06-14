@@ -63,7 +63,7 @@ export class FreelancersPageComponent implements OnInit {
     this.subjectSuggestions = [];
 
     if(input.query.length == 0 || input.query[0] == '*') {
-      this.subjectSuggestions = this.subjectList;
+      this.subjectSuggestions = [...this.subjectList];
     }
     else {
       for (let i = 0; i < this.subjectList.length; i++)
@@ -78,7 +78,7 @@ export class FreelancersPageComponent implements OnInit {
     this.uniSuggestions = [];
 
     if(input.query.length == 0 || input.query[0] == '*') {
-      this.uniSuggestions = this.uniList;
+      this.uniSuggestions = [...this.uniList];
     }
     else {
       for (let i = 0; i < this.uniList.length; i++)

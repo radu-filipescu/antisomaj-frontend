@@ -12,6 +12,7 @@ export class JobsPageComponent implements OnInit {
 
   jobMock: JobDTO = new JobDTO;
   jobs: JobDTO[] = [];
+  jobsFiltered: JobDTO[] = []
   filters: FilterModel = new FilterModel(); // cand folosesc din range inmultesc cu 100 inainte
   categories: string[] = [];
   categorySuggestions: string[] = []
@@ -29,24 +30,43 @@ export class JobsPageComponent implements OnInit {
     this.jobMock.salary = 5;
     this.jobMock.keywords = ["sapa", "gradina", "proiect"];
     this.jobMock.category = "Muncit cu ziua";
+    this.jobMock.minimumExperience = 3;
 
     this.jobs = [this.jobMock, this.jobMock, this.jobMock];
+    this.jobsFiltered = this.jobs;
     this.categories = this.categoriesMock;
   }
 
   searchCategories(input: any) {
-    this.categorySuggestions = [];
+    let suggestions: string[] = []
 
     if(input.query.length == 0 || input.query[0] == '*') {
-      this.categorySuggestions = this.categories;
+      suggestions = [...this.categories];
     }
     else {
       for (let i = 0; i < this.categories.length; i++)
         if (this.categories[i].toLowerCase().includes(input.query.toLowerCase()))
-          this.categorySuggestions.push(this.categories[i]);
+          suggestions.push(this.categories[i]);
     }
 
-    this.categorySuggestions.push("toate");
+    suggestions.push("toate");
+
+    this.categorySuggestions = suggestions;
+  }
+
+  categoryDropdownClickHandler() {
+    this.categorySuggestions = this.categories;
+  }
+
+  filter(){
+    this.jobsFiltered = []
+    for(let job of this.jobs){
+      if(job.minimumExperience <= this.filters.minimumExperience && 
+        (job.category.includes(this.filters.category) || this.filters.category == "toate") && 
+        job.salary >= this.filters.payRangeValues[0] * 100 && job.salary <= this.filters.payRangeValues[1] * 100){
+        this.jobsFiltered.push(job);
+      }
+    }
   }
 
 }

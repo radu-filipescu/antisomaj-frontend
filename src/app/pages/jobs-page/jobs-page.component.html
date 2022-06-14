@@ -5,20 +5,20 @@
         <div class="filter-section">
             <label for="category">Categorie</label>
             <p-autoComplete [(ngModel)]="filters.category" [suggestions]="categorySuggestions" (completeMethod)="searchCategories($event)"
-                    [dropdown]="true" [forceSelection]="true">
+                    [dropdown]="true" [forceSelection]="true" (onSelect)="filter()">
             </p-autoComplete>
         </div>
         <div class="filter-section">
             <label for="payRange">Salariu</label>
             <div class="slider-container">
-                <p-slider [(ngModel)]="filters.payRangeValues" [range]="true" [min]="0" [max]="100" id="payRange"></p-slider>
+                <p-slider [(ngModel)]="filters.payRangeValues" [range]="true" [min]="0" [max]="100" id="payRange" (onSlideEnd)="filter()"></p-slider>
             </div>
             <p class="range-value">{{filters.payRangeValues[0] * 100}} - {{ filters.payRangeValues[1] * 100 }}</p>
         </div>
         <div class="filter-section">
             <label for="experience">Ani de experienta</label>
             <div class="slider-container">
-                <p-slider [(ngModel)]="filters.minimumExperience" id="experience" [max]="10"></p-slider>
+                <p-slider [(ngModel)]="filters.minimumExperience" id="experience" [max]="10" (onSlideEnd)="filter()"></p-slider>
             </div>
             <p class="range-value">{{filters.minimumExperience}}</p>
         </div>
@@ -30,8 +30,9 @@
     </div>
     
     <div class="jobs">
-        <app-job-card *ngFor="let job of jobs" [job] = "job"></app-job-card>
-        <p *ngIf="!jobs.length">Nu exista anunturi</p>
+        <app-job-card *ngFor="let job of jobsFiltered" [job] = "job"></app-job-card>
+        <p *ngIf="!jobs.length">Nu exista anunturi!</p>
+        <p *ngIf="jobs.length && !jobsFiltered.length">Nu exista anunturi cu criteriile cerute!</p>
     </div>
 </div>
 
