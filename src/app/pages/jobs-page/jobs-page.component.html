@@ -2,9 +2,25 @@
 
 <div class="page-content">
     <div class="filters">
-        <p>filtre</p>
         <div class="filter-section">
-            <p-slider [(ngModel)]="filters.rangeValues" [range]="true"></p-slider>
+            <label for="category">Categorie</label>
+            <select name="category" id="category" [(ngModel)]="filters.category">
+                <option *ngFor="let category of categories" value="{{category}}">{{ category }}</option>
+            </select>
+        </div>
+        <div class="filter-section">
+            <label for="payRange">Salariu</label>
+            <div class="slider-container">
+                <p-slider [(ngModel)]="filters.payRangeValues" [range]="true" [min]="0" [max]="1000" id="payRange"></p-slider>
+            </div>
+            <p class="range-value">{{filters.payRangeValues[0]}} - {{ filters.payRangeValues[1] }}</p>
+        </div>
+        <div class="filter-section">
+            <label for="experience">Ani de experienta</label>
+            <div class="slider-container">
+                <p-slider [(ngModel)]="filters.minimumExperience" id="experience" [max]="10"></p-slider>
+            </div>
+            <p class="range-value">{{filters.minimumExperience}}</p>
         </div>
     </div>
 
@@ -15,6 +31,7 @@
     
     <div class="jobs">
         <app-job-card *ngFor="let job of jobs" [job] = "job"></app-job-card>
+        <p *ngIf="!jobs.length">Nu exista anunturi</p>
     </div>
 </div>
 

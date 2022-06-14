@@ -5,5 +5,7 @@ export class JobDTO {
     description: string = "";
     salary: number = 0;
     keywords: string[] = [];
+    category: string = "";
+    minimumExperience: number = 0;
     employer: EmployerDTO = new EmployerDTO();
 }
