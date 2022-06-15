@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupPageComponent },
   { path: 'job-search', component: JobsPageComponent },
   { path: 'freelancer-search', component: FreelancersPageComponent },
-  { path: 'user-profile', component: ProfilePageComponent },
+  { path: 'user-profile/:id', component: ProfilePageComponent },
   { path: '**', component: HomepageComponent }
 ];
 

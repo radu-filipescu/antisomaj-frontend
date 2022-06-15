@@ -1,13 +1,79 @@
 .wrapper {
-  display: grid;
-  grid-template-areas: "column1 column2";
-  grid-template-columns: 30vw 50vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  margin-top: 6vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  background: #FBFEF9;
 }
 
 #profile-pic {
-  width: 100px;
-  height: 100px;
-  background: black;
+  width: 150px;
+  height: 150px;
+  background: #F39237;
+  border-radius: 100px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  line-height: 140px;
+  border: 2px solid #BF1363;
+  color: #191923;
+  font-size: 60px;
+  box-shadow: #191923 4px 5px 12px -4px;
+}
+
+#action-buttons {
+  position: absolute;
+  right: 20vw;
+  top: 8vw;
+}
+
+#deactivate {
+  background: #ba1616;
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 1px 1px #191923;
+}
+
+#deactivate:hover {
+  box-shadow: #191923 4px 5px 12px -4px;
+}
+
+#user-stuff {
+  margin-left: 20px;
+  display: inline-block;
+  width: 40vw;
+  float: left;
+}
+
+#username {
+  font-size: 38px;
+  color: #191923;
+}
+
+#email {
+  font-size: 22px;
+  color: #0261a5;
+}
+
+#city {
+  color: #BF1363;
+  position: relative;
+  top: 16px;
+  font-size: 20px;
+}
+
+#freelancing-stuff {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #191923;
+  box-shadow: #191923 4px 5px 12px -4px;
+}
+
+#employeer-stuff {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #191923;
+  box-shadow: #191923 4px 5px 12px -4px;
 }

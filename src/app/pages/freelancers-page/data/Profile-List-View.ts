@@ -1,4 +1,5 @@
 export class ProfileListView {
+  id: number = 0;
   userImage: any;
   userName: string = "Mihaita Bossinovich";
   userPosition: string = "boschetar la primaria vaslui";

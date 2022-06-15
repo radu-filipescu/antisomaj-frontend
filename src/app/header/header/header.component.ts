@@ -22,6 +22,11 @@ export class HeaderComponent implements OnInit {
     this.isLoggedIn = this.authService.isLogged();
   }
 
+  navigateToOwnProfile() {
+    let myId = this.authService.getMyId();
+    this.router.navigate(['/user-profile', myId]);
+  }
+
   goToTop(element: HTMLElement) {
     //while(this.router.url != '/') {
     //}

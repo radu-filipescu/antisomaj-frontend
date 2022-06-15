@@ -1,10 +1,55 @@
 <app-header></app-header>
+<br>
 <div class="wrapper">
+  <div id="action-buttons">
+    <div id="deactivate">Dezactivează contul <b>X</b> </div>
+  </div>
+  <br>
+  <br>
   <div id="profile-pic">
-<!--    <img *ngIf="userProfile."-->
-    <div>{{userProfile.firstName[0]}}</div>
+    <div style="font-size: 110px; font-weight: bold; font-family: Verdana;">{{userProfile.firstName[0]}}</div>
   </div>
 
+  <div id="user-stuff">
+    <div id="username">{{userProfile.firstName + " " + userProfile.lastName}}</div>
+    <div id="email">{{userProfile.email}}</div>
+    <br>
+    <br>
+    <div id="city">{{userProfile.city}}</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div *ngIf="userProfile.freelancerInfo.accountId > 0" id="freelancing-stuff">
+
+    <div style="font-size: 30px; font-weight: bold">Educație:</div>
+    <br>
+    <div>{{userProfile.freelancerInfo.education}}</div>
+    <br>
+    <div style="font-size: 30px; font-weight: bold">Descriere:</div>
+    <br>
+    <div>{{userProfile.freelancerInfo.description}}</div>
+    <br>
+  </div>
+  <br>
+
+  <div *ngIf="userProfile.employerInfo.accountId > 0" id="employeer-stuff">
+    <div style="font-size: 30px; font-weight: bold">Locație:</div>
+    <br>
+    <div>{{userProfile.employerInfo.location}}</div>
+    <br>
+    <div style="font-size: 30px; font-weight: bold">Descrierea Firmei:</div>
+    <br>
+    <div>{{userProfile.employerInfo.description}}</div>
+    <br>
+  </div>
 
 
 </div>

@@ -1,10 +1,10 @@
 <div class="wrapper">
-  <div id="photo">
+  <div id="photo" (click)="navigateToProfile(userProfile.id)">
     <img *ngIf="thumbnail" [src]="thumbnail">
     <div *ngIf="!thumbnail" style="font-size: 70px">{{userProfile.userName[0]}}</div>
   </div>
 
-  <div id="name">{{userProfile.userName}}
+  <div id="name" (click)="navigateToProfile(userProfile.id)">{{userProfile.userName}}
     <div id="position">{{userProfile.userPosition}}</div>
   </div>
 

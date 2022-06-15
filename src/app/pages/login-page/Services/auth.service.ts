@@ -17,6 +17,9 @@ export class AuthService {
       .subscribe(
         response => {
           localStorage.setItem('auth-token', response.toString());
+
+          //TODO
+          localStorage.setItem('user-id', "15");
         },
         error => {
           this.notificationService.emitNotification("Eroare la intrarea în cont", error.message, true, false);
@@ -28,15 +31,23 @@ export class AuthService {
     return localStorage.getItem('auth-token');
   }
 
+  getMyId() {
+    //TODO
+    return 1;
+
+    //return localStorage.getItem('user-id');
+  }
+
   isLogged() {
-    let token = this.getToken();
-
-    if(!token)
-      return false;
-
-    // checks the token exp date
-    const expiry = (JSON.parse(atob(token.split('.')[1]))).exp;
-    if(Math.floor((new Date).getTime() / 1000) >= expiry) return false;
+    // TODO developing
+    // let token = this.getToken();
+    //
+    // if(!token)
+    //   return false;
+    //
+    // // checks the token exp date
+    // const expiry = (JSON.parse(atob(token.split('.')[1]))).exp;
+    // if(Math.floor((new Date).getTime() / 1000) >= expiry) return false;
 
     return true;
   }

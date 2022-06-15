@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProfileListView} from "./data/Profile-List-View";
-import {FreelancerServiceService} from "./service/freelancer-service.service";
+import {UserService} from "./service/user.service";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -27,7 +27,7 @@ export class FreelancersPageComponent implements OnInit {
   citySuggestions: string[] = [];
   cityList: string[] = [];
 
-  constructor(private freelancerService: FreelancerServiceService,
+  constructor(private freelancerService: UserService,
               private httpClient: HttpClient) { }
 
   ngOnInit(): void {
