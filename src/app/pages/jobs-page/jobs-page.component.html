@@ -25,10 +25,10 @@
     </div>
 
     <div class="search-bar">
-        <input type="text" />
-        <button>Cauta</button>
+        <input style="border-radius: 5px" type="text"/>
+        <button style="border-radius: 8px">Cauta</button>
     </div>
-    
+
     <div class="jobs">
         <app-job-card *ngFor="let job of jobsFiltered" [job] = "job"></app-job-card>
         <p *ngIf="!jobs.length">Nu exista anunturi!</p>

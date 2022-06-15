@@ -1,0 +1,53 @@
+<app-header></app-header>
+<br>
+<br>
+<div class="wrapper">
+  <div id="title">Adaugă un anunț:</div>
+  <br>
+  <br>
+
+  <label>Numele anunțului:</label>
+  <br>
+  <input type="text" [(ngModel)]="newJob.name">
+  <br>
+  <br>
+
+  <label>Descrierea anunțului:</label>
+  <br>
+  <textarea [(ngModel)]="newJob.description"></textarea>
+  <br>
+  <br>
+
+  <label>Salariu (RON/oră):</label>
+  <br>
+  <input type="number" [(ngModel)]="newJob.salary">
+  <br>
+  <br>
+
+  <label>Cuvinte cheie: <br>(importante pentru ca acest job să apară în cautări)</label>
+  <br>
+  <input id="keywords-input" type="text" [(ngModel)]="newKeyword">
+  <div id="keywords-add" (click)="addKeyword()">+</div>
+  <br>
+
+  <div *ngIf="newJob.keywords.length > 0" id="keyword-list">
+    <br>
+    <div class="keyword-label" *ngFor="let kw of newJob.keywords">{{kw}}</div>
+  </div>
+
+  <br>
+  <label>Categorie:</label>
+  <br>
+  <input type="text" [(ngModel)]="newJob.category">
+  <br>
+  <br>
+
+  <label>Experiență minimă (ani):</label>
+  <br>
+  <input type="number" [(ngModel)]="newJob.minimumExperience">
+  <br>
+  <br>
+
+  <button id="add-button" (click)="addJob()">Adaugă anunț!</button>
+
+  </div>

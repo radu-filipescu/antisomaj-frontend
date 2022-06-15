@@ -5,6 +5,7 @@
     display: flex;
     margin-bottom: 20px;
     box-shadow: #191923 4px 5px 12px -4px;
+    background: white;
 }
 
 .job-info{

@@ -7,6 +7,7 @@ import {SignupPageComponent} from "./pages/signup-page/signup-page.component";
 import {HOME} from "@angular/cdk/keycodes";
 import {FreelancersPageComponent} from "./pages/freelancers-page/freelancers-page.component";
 import {ProfilePageComponent} from "./pages/profile-page/profile-page.component";
+import {AddJobPageComponent} from "./pages/add-job-page/add-job-page.component";
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'job-search', component: JobsPageComponent },
   { path: 'freelancer-search', component: FreelancersPageComponent },
   { path: 'user-profile/:id', component: ProfilePageComponent },
+  { path: 'add-job', component: AddJobPageComponent },
   { path: '**', component: HomepageComponent }
 ];
 

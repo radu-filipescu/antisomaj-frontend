@@ -29,6 +29,7 @@ import {InputTextareaModule} from "primeng/inputtextarea";
 import { FreelancersPageComponent } from './pages/freelancers-page/freelancers-page.component';
 import { ProfileListViewComponent } from './pages/freelancers-page/profile-list-view/profile-list-view.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { AddJobPageComponent } from './pages/add-job-page/add-job-page.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
     NotificationsComponent,
     FreelancersPageComponent,
     ProfileListViewComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    AddJobPageComponent
   ],
   imports: [
     BrowserModule,

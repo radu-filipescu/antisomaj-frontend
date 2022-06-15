@@ -35,6 +35,7 @@ export class ProfilePageComponent implements OnInit {
 
 
     this.userProfile.freelancerInfo.accountId = 1;
+    this.userProfile.freelancerInfo.cvLink = "pornhub.md";
     this.userProfile.freelancerInfo.education = "universitatea de arte si meserii zimnicea";
     this.userProfile.freelancerInfo.description = "buna eu sunt conformitate cu prevederile Regulamentului de functionare a Marii Adunari Nationale, tovarasul Manea Manescu, membru al Comitetului Politic Executiv al Comitetului Central al Partidului Comunist Roman, prim-vicepresedinte al Consiliului National al Frontului Democratiei si Unitatii Socialiste, a propus realegerea in inalta functie de Presedinte al Republicii Socialiste Romania a tovarasului Nicolae Ceausescu, secretar general al Partidului Comunist Roman, presedintele Frontului Democratiei si Unitatii Socialiste, chezasie sigura a transpunerii in viata a maretului program de faurire a societatii socialiste multilateral dezvoltate si de inaintare a Romaniei spre comunism.\n" +
       "\n" +
@@ -45,6 +46,7 @@ export class ProfilePageComponent implements OnInit {
       "Tovarasul Nicolae Ceausescu, Presedintele Republicii Socialiste Romania, a depus in fata Marii Adunari Nationale juramintul prevazut in articolul 73 din Constitutie."
 
     this.userProfile.employerInfo.accountId = 1;
+    this.userProfile.employerInfo.name = "santierul cucu";
     this.userProfile.employerInfo.description = "Videochatul nu cunoaște criza! (Merge cel mai bine pe timp de criza financiară)\n" +
       "\n" +
       "Deschidem studiouri de videochat la cheie!\n" +

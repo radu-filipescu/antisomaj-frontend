@@ -8,6 +8,8 @@
     </div>
   </div>
 
+  <div id="addJob" (click)="addJob()">+ adauga un anunț</div>
+
   <div *ngIf="!isLoggedIn" id="account">
     <div routerLink="/login" class="account-button">Login</div>
     <div routerLink="/signup" class="account-button">Sign up</div>

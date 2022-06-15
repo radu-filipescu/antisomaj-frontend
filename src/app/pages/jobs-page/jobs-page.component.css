@@ -4,7 +4,7 @@
     position: relative;
     top: 10vh;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'filters search-bar'
         'filters jobs';
     gap: 30px 50px;
@@ -20,7 +20,7 @@
 }
 
 .search-bar {
-    
+
     grid-area: search-bar;
 }
 
