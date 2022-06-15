@@ -2,8 +2,9 @@ import {EmployerDTO} from "./EmployerDTO";
 import {FreelancerDTO} from "./FreelancerDTO";
 
 export class AccountDTO {
-  name: string = "";
-  surname: string = "";
+  firstName: string = "";
+  lastName: string = "";
+  password: string = "";
   dateOfBirth: Date = new Date();
   email: string = "";
   city: string = "";

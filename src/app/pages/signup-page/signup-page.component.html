@@ -7,13 +7,13 @@
     <div class="signup-input">
       <label>Prenume</label>
       <br>
-      <input [(ngModel)]="newAccount.name">
+      <input [(ngModel)]="newAccount.firstName">
     </div>
 
     <div class="signup-input">
       <label>Nume</label>
       <br>
-      <input [(ngModel)]="newAccount.surname">
+      <input [(ngModel)]="newAccount.lastName">
     </div>
 
     <div class="signup-input">
@@ -52,7 +52,7 @@
       <div class="signup-input">
         <label>Adăugați CV:</label>
         <br>
-        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.freelancerInfo.CV"></textarea>
+        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.freelancerInfo.cvLink"></textarea>
       </div>
     </div>
 
@@ -66,19 +66,19 @@
       <div class="signup-input">
         <label>Numele firmei dumneavoastră:</label>
         <br>
-        <input [(ngModel)]="newAccount.employerInfo.businessName">
+        <input [(ngModel)]="newAccount.employerInfo.name">
       </div>
 
       <div class="signup-input">
         <label>Locația firmei dumneavoastră:</label>
         <br>
-        <input [(ngModel)]="newAccount.employerInfo.businessLocation">
+        <input [(ngModel)]="newAccount.employerInfo.location">
       </div>
 
       <div class="signup-input">
         <label>Descrierea firmei dumneavoastră:</label>
         <br>
-        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.employerInfo.businessDescription"></textarea>
+        <textarea pInputTextarea [rows]="5" [cols]="50" [(ngModel)]="newAccount.employerInfo.description"></textarea>
       </div>
     </div>
 

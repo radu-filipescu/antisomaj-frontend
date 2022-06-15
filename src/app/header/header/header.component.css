@@ -45,6 +45,13 @@
   line-height: 8vh;
 }
 
+#account-setting {
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  line-height: 8vh;
+}
+
 .account-button {
   display: inline-block;
   float: left;

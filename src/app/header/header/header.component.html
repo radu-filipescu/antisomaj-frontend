@@ -12,4 +12,11 @@
     <div routerLink="/login" class="account-button">Login</div>
     <div routerLink="/signup" class="account-button">Sign up</div>
   </div>
+
+  <div *ngIf="isLoggedIn" id="account-setting">
+    <div routerLink="/user-profile" class="account-button">
+      <img style="width: 30px; position: relative; top: 10px"src="assets/images/profile-icon.png">
+    </div>
+    <div class="account-button" (click)="logout()">Logout</div>
+  </div>
 </div>

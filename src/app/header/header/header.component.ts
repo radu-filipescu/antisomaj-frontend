@@ -27,4 +27,8 @@ export class HeaderComponent implements OnInit {
     //}
     element.scrollIntoView({behavior: 'smooth'})
   }
+
+  logout() {
+    this.authService.logout();
+  }
 }

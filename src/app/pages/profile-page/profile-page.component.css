@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  grid-template-areas: "column1 column2";
+  grid-template-columns: 30vw 50vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
