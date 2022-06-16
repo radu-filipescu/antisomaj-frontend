@@ -22,6 +22,15 @@ export class HeaderComponent implements OnInit {
     this.isLoggedIn = this.authService.isLogged();
   }
 
+  addJob() {
+    if(!this.authService.isLogged()) {
+      this.router.navigate(["/login"]);
+    }
+    else {
+      this.router.navigate(["/add-job"]);
+    }
+  }
+
   navigateToOwnProfile() {
     let myId = this.authService.getMyId();
     this.router.navigate(['/user-profile', myId]);

@@ -30,6 +30,7 @@ import { FreelancersPageComponent } from './pages/freelancers-page/freelancers-p
 import { ProfileListViewComponent } from './pages/freelancers-page/profile-list-view/profile-list-view.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { TextTrimmerPipe } from './globalStuff/text-trimmer.pipe';
+import { AddJobPageComponent } from './pages/add-job-page/add-job-page.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TextTrimmerPipe } from './globalStuff/text-trimmer.pipe';
     FreelancersPageComponent,
     ProfileListViewComponent,
     ProfilePageComponent,
-    TextTrimmerPipe
+    TextTrimmerPipe,
+    AddJobPageComponent
   ],
   imports: [
     BrowserModule,

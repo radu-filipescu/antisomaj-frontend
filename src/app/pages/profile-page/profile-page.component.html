@@ -6,6 +6,7 @@
   </div>
   <br>
   <br>
+
   <div id="profile-pic">
     <div style="font-size: 110px; font-weight: bold; font-family: Verdana;">{{userProfile.firstName[0]}}</div>
   </div>
@@ -25,7 +26,8 @@
   <br>
   <br>
   <br>
-
+  <hr>
+  <br>
 
   <div *ngIf="userProfile.freelancerInfo.accountId > 0" id="freelancing-stuff">
 
@@ -37,10 +39,17 @@
     <br>
     <div>{{userProfile.freelancerInfo.description}}</div>
     <br>
+    <div style="font-size: 30px; font-weight: bold">Link CV:</div>
+    <br>
+    <div>{{userProfile.freelancerInfo.cvLink}}</div>
   </div>
   <br>
 
   <div *ngIf="userProfile.employerInfo.accountId > 0" id="employeer-stuff">
+    <div style="font-size: 30px; font-weight: bold">Numele firmei:</div>
+    <br>
+    <div>{{userProfile.employerInfo.name}}</div>
+    <br>
     <div style="font-size: 30px; font-weight: bold">Locație:</div>
     <br>
     <div>{{userProfile.employerInfo.location}}</div>
