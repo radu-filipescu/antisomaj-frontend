@@ -8,6 +8,7 @@ import {HOME} from "@angular/cdk/keycodes";
 import {FreelancersPageComponent} from "./pages/freelancers-page/freelancers-page.component";
 import {ProfilePageComponent} from "./pages/profile-page/profile-page.component";
 import {AddJobPageComponent} from "./pages/add-job-page/add-job-page.component";
+import { JobDetailsPageComponent } from './pages/job-details-page/job-details-page.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'freelancer-search', component: FreelancersPageComponent },
   { path: 'user-profile/:id', component: ProfilePageComponent },
   { path: 'add-job', component: AddJobPageComponent },
+  { path: 'job/:id', component: JobDetailsPageComponent },
   { path: '**', component: HomepageComponent }
 ];
 

@@ -31,6 +31,7 @@ import { ProfileListViewComponent } from './pages/freelancers-page/profile-list-
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { TextTrimmerPipe } from './globalStuff/text-trimmer.pipe';
 import { AddJobPageComponent } from './pages/add-job-page/add-job-page.component';
+import { JobDetailsPageComponent } from './pages/job-details-page/job-details-page.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AddJobPageComponent } from './pages/add-job-page/add-job-page.component
     ProfileListViewComponent,
     ProfilePageComponent,
     TextTrimmerPipe,
-    AddJobPageComponent
+    AddJobPageComponent,
+    JobDetailsPageComponent
   ],
   imports: [
     BrowserModule,

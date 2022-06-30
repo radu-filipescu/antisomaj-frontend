@@ -23,3 +23,7 @@
     width: fit-content;
 }
 
+.link:hover{
+    text-decoration: underline;
+}
+

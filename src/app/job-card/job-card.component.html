@@ -1,8 +1,8 @@
 <div class="wrapper">
     <div class="job-info">
-        <h2>{{ job.name }}</h2>
+        <h2 (click)="navigateToJob(job.id)" class="link">{{ job.name }}</h2>
         <p>{{ job.description }}</p>
-        <p>{{ job.salary }} lei</p>
+        <p>{{ job.salary }} lei/ora</p>
         <p class="category-tag">{{ job.category }}</p>
     </div>
 </div>

@@ -15,6 +15,10 @@ export class JobsServiceService {
     return this.httpService.get<JobDTO[]>(this.jobsApi + "s");
   }
 
+  getJobById(id: number){
+    return this.httpService.get<JobDTO>(this.jobsApi + "/" + id);
+  }
+
   addJob(job: JobDTO) {
     this.httpService.post(this.jobsApi, job);
   }

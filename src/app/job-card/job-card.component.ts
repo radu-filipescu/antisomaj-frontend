@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { JobDTO } from '../pages/jobs-page/Entities/JobDTO';
 
 @Component({
@@ -10,9 +11,13 @@ export class JobCardComponent implements OnInit {
 
   @Input() job: JobDTO = new JobDTO;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToJob(jobId: number) {
+    this.router.navigate(['/job', jobId]);
   }
 
 }
