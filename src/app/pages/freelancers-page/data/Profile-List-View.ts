@@ -1,24 +1,10 @@
 export class ProfileListView {
   id: number = 0;
   userImage: any;
-  userName: string = "Mihaita Bossinovich";
-  userPosition: string = "boschetar la primaria vaslui";
-  price: string = "10 lei/muia";
+  userName: string = "Nume Prenume";
+  userPosition: string = "rang";
+  price: string = "10 lei/ora";
   experience: string = "15 ani";
-  description: string = "Ăsta sunt eu, ăsta sunt eu\n" +
-    "Băiatu' care scuipă rimele din Ozn-u\n" +
-    "Băiatu' care rupe toată mufa pă neveu\n" +
-    "Dacă suferi de smardoi, sau că ești vreun mare zmeu\n" +
-    "Eu te spintec ca pe sticks-uri și te umplu dă smecleu (Zi-le)\n" +
-    "Dă-te mai încoa', să te bag pe filmu' meu\n" +
-    "Direct din poarta patru, dau o pasă la fileu\n" +
-    "Dau o minge pe voleu și croșeu, după croșeu\n" +
-    "Ca să știe toată lumea ca am coaiele dă zeu\n" +
-    "Toți băieții pe maidan, imediat numele meu\n" +
-    "Io sunt ăla care-o ține pă gagică-ta-n peleu\n" +
-    "Când stă singură p-acasă și cu gura pă trofeu\n" +
-    "Îi recit o poezie, ca maestrul Deceneu\n" +
-    "Și toți fraierii cu harfe, azi au dat de cel mai greu\n" +
-    "N-o mai arde tare-n clanță dacă nu e geu, geu\n" +
-    "Cum te bate Macanache, nu te bate Dumnezeu";
+  description: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus sapien, sodales vel justo ac, tempus semper tortor. Vivamus posuere aliquam eleifend. Proin pretium, magna eu consequat condimentum, arcu erat viverra nisi, sit amet venenatis velit lectus sit amet lorem. Ut ac fringilla urna, in tristique sem. Quisque feugiat gravida justo in suscipit. Suspendisse convallis odio a elit molestie, a tempor purus rutrum. Cras enim mauris, ultricies sit amet pellentesque quis, rhoncus vitae tortor. Nunc faucibus lacus vitae mi aliquet condimentum. Donec sit amet rutrum nibh.\n" +
+    "Etiam pretium nibh ultricies metus suscipit finibus. Sed eu lacus neque. Praesent euismod, quam eu condimentum efficitur, nisi tellus porttitor dui, ac placerat justo risus ut nisl. Morbi cursus felis et interdum lobortis. Nunc sit amet neque dui. Curabitur id nunc neque. Phasellus congue fringilla elementum. Aenean vitae lorem velit. Donec auctor, mi sed aliquam ornare, sem dolor maximus ante, sit amet aliquam augue diam nec ex. Nunc sagittis turpis finibus nisi pellentesque, sit amet placerat nisl aliquet.";
 }

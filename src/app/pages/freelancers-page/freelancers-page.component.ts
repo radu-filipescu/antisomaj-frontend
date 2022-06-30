@@ -17,11 +17,11 @@ export class FreelancersPageComponent implements OnInit {
 
   subject: string = "";
   subjectSuggestions: string[] = [];
-  subjectList: string[] = ["matematica","informatica","biologie","sex","mecanica","cryptomonede","arges"];
+  subjectList: string[] = ["matematica","informatica","biologie","mecanica"];
 
   university: string = "";
   uniSuggestions: string[] = [];
-  uniList: string[] = ["FMI UNIBUC","UBB CLUJ","CUZA IASI","romano americana","sex"];
+  uniList: string[] = ["FMI UNIBUC","UBB CLUJ","CUZA IASI"];
 
   city: string = "";
   citySuggestions: string[] = [];

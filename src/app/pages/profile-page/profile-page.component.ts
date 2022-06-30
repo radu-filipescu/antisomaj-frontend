@@ -27,58 +27,22 @@ export class ProfilePageComponent implements OnInit {
         this.userProfile = data;
       });
 
-    this.userProfile.firstName = "Dragan";
-    this.userProfile.lastName = "Mihaita";
-    this.userProfile.city = "Balotesti";
-    this.userProfile.email = "sobelelesti@mata.com";
+    this.userProfile.firstName = "Prenume";
+    this.userProfile.lastName = "Nume";
+    this.userProfile.city = "Oras";
+    this.userProfile.email = "adresa@email.com";
     this.userProfile.dateOfBirth = new Date();
 
 
     this.userProfile.freelancerInfo.accountId = 1;
-    this.userProfile.freelancerInfo.cvLink = "pornhub.md";
-    this.userProfile.freelancerInfo.education = "universitatea de arte si meserii zimnicea";
-    this.userProfile.freelancerInfo.description = "buna eu sunt conformitate cu prevederile Regulamentului de functionare a Marii Adunari Nationale, tovarasul Manea Manescu, membru al Comitetului Politic Executiv al Comitetului Central al Partidului Comunist Roman, prim-vicepresedinte al Consiliului National al Frontului Democratiei si Unitatii Socialiste, a propus realegerea in inalta functie de Presedinte al Republicii Socialiste Romania a tovarasului Nicolae Ceausescu, secretar general al Partidului Comunist Roman, presedintele Frontului Democratiei si Unitatii Socialiste, chezasie sigura a transpunerii in viata a maretului program de faurire a societatii socialiste multilateral dezvoltate si de inaintare a Romaniei spre comunism.\n" +
-      "\n" +
-      "Dind expresie vointei unanime si entuziaste a intregului popor, Marea Adunare Nationala a reales, intr-o atmosfera de puternica vibratie patriotica, cu unanimitate de voturi, pe tovarasul Nicolae Ceausescu, cel mai vrednic si iubit fiu al poporului roman, in suprema functie de Presedinte al Republicii Socialiste Romania.\n" +
-      "\n" +
-      "Presedintele Marii Adunari Nationale a inminat tovarasului Nicolae Ceausescu insemnele prezidentiale si de comandant suprem al fortelor armate.\n" +
-      "\n" +
-      "Tovarasul Nicolae Ceausescu, Presedintele Republicii Socialiste Romania, a depus in fata Marii Adunari Nationale juramintul prevazut in articolul 73 din Constitutie."
+    this.userProfile.freelancerInfo.cvLink = "linkdesite.com";
+    this.userProfile.freelancerInfo.education = "universitate studii";
+    this.userProfile.freelancerInfo.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus sapien, sodales vel justo ac, tempus semper tortor. Vivamus posuere aliquam eleifend. Proin pretium, magna eu consequat condimentum, arcu erat viverra nisi, sit amet venenatis velit lectus sit amet lorem. Ut ac fringilla urna, in tristique sem. Quisque feugiat gravida justo in suscipit. Suspendisse convallis odio a elit molestie, a tempor purus rutrum. Cras enim mauris, ultricies sit amet pellentesque quis, rhoncus vitae tortor. Nunc faucibus lacus vitae mi aliquet condimentum. Donec sit amet rutrum nibh."
 
     this.userProfile.employerInfo.accountId = 1;
-    this.userProfile.employerInfo.name = "santierul cucu";
-    this.userProfile.employerInfo.description = "Videochatul nu cunoaște criza! (Merge cel mai bine pe timp de criza financiară)\n" +
-      "\n" +
-      "Deschidem studiouri de videochat la cheie!\n" +
-      "Oferim consultanta, de la a la z plus aparatura tehnica și pașii juridici pentu legalitate, fiscalitate pentru una dintre cele mai prospere afacere din România!\n" +
-      "\n" +
-      "In România exista peste 5000 de studiouri de videochat in care lucrează peste 100 de mii de de persoane!\n" +
-      "Afacerea este perfect legală atata timp cât se plătesc taxele aferente!\n" +
-      "\n" +
-      "Puteți accesa pe google cele mai mari site-uri internaționale de videochat sa vedeți ce trafic de membrii imens au și sa va faceți o idee despre afacere!\n" +
-      "\n" +
-      "Enumeram cateva dintre ele:\n" +
-      "\n" +
-      "Livejasmin. Com-site de privat(membrul accesează o discuție privată cu modelul,plătită la minut)\n" +
-      "Chaturbate. Com-(modelele primesc tipsuri in free(tokens) plus sesiuni private cu membrii)\n" +
-      "MyFreeCams. Com-(modelele primesc tipsuri in free(tokens) plus sesiuni private cu membrii!\n" +
-      "Stripchat. Com-(modelele primesc tipsuri in free(tokens) plus sesiuni private cu membrii!\n" +
-      "Streamate. Com-(site de privat)\n" +
-      "Adultwork. Com-(site de privat)\n" +
-      "Flirt4free. Com-(site de privat)\n" +
-      "\n" +
-      "Puteți accesa site-urile mai sus menționate sa va faceti o idee despre ce înseamnă aceasta industrie de live cam!\n" +
-      "\n" +
-      "Clienții care au abonamente la site-uri sunt in mare parte din Statele Unite,Canada, Australia, Europa de vest, etc..\n" +
-      "\n" +
-      "Puteți caută pe YouTube sau google foarte multe detalii despre afacere, scriind afacere videochat!\n" +
-      "\n" +
-      "Modelele sunt entertaineri online, industria nu mai este de mult o industrie exclusiv adult, se poate compara foarte bine cu vlogerii care Creează conținut pe YouTube, doar ca la un nivel worldwide!\n" +
-      "In acest business vindem către pietele externe iar clienții sunt exclusiv din străinătate!\n" +
-      "\n" +
-      "Un studio de videochat cu 3 posturi de lucru cu 6 angajate produce in medie un venit de 15.000-20.000 dolari , media fiind de 3000-4000 dolari/model lunar!\n" +
-      "Profitul se împarte de obicei in mod egal între studio și modele! 50-50\n";
-      this.userProfile.employerInfo.location = "Grozavesti pula beletsit";
+    this.userProfile.employerInfo.name = "Nume Firma";
+    this.userProfile.employerInfo.description = "Quisque efficitur venenatis scelerisque. Vivamus dolor nulla, luctus a nulla sed, malesuada lacinia neque. Vestibulum neque mauris, elementum non bibendum ac, tempus quis ante. Nam laoreet tortor sed purus rhoncus, nec maximus velit auctor. Suspendisse quis hendrerit ipsum. Etiam vestibulum ligula ex, eu ultricies erat congue et. Proin aliquam libero eu neque pellentesque elementum. Duis nec lorem sit amet enim dignissim sagittis. Nulla ornare ante id justo volutpat pharetra. Proin sed erat orci. Aliquam pellentesque venenatis enim, ac lacinia erat facilisis eget. Nam vitae nunc dignissim, pulvinar justo a, dictum ex. Aenean malesuada scelerisque lorem, vel pharetra purus.";
+    this.userProfile.employerInfo.location = "Locatie";
 
   }
 

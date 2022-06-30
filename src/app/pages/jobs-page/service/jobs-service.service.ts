@@ -7,12 +7,12 @@ import {JobDTO} from "../Entities/JobDTO";
 })
 export class JobsServiceService {
 
-  jobsApi: string = "https://localhost:8080/jobs";
+  jobsApi: string = "http://localhost:8080/job";
 
   constructor(private httpService: HttpClient) { }
 
   getJobs(){
-    return this.httpService.get<JobDTO>(this.jobsApi);
+    return this.httpService.get<JobDTO[]>(this.jobsApi + "s");
   }
 
   addJob(job: JobDTO) {

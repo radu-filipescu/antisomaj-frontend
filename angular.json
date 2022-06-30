@@ -75,7 +75,8 @@
               "browserTarget": "antisomaj:build:production"
             },
             "development": {
-              "browserTarget": "antisomaj:build:development"
+              "browserTarget": "antisomaj:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -110,6 +111,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
         }
+        
       }
     }
   },
