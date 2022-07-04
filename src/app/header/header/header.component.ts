@@ -19,6 +19,13 @@ export class HeaderComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit(): void {
+    this.authService.authStatus.subscribe(
+      data => {
+        this.isLoggedIn = this.authService.isLogged();
+
+        this.router.navigate(['']);
+      }
+    )
     this.isLoggedIn = this.authService.isLogged();
   }
 
@@ -43,6 +50,7 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
+    this.isLoggedIn = false;
     this.authService.logout();
   }
 }
